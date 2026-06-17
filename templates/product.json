@@ -18,10 +18,10 @@
       "type": "benefits",
       "settings": { "heading": "Why you'll love it" },
       "blocks": {
-        "b1": { "type": "benefit", "settings": { "icon": "⬆️", "title": "Instant lift", "text": "Microcurrent stimulates facial muscles for a visibly lifted look." } },
-        "b2": { "type": "benefit", "settings": { "icon": "💎", "title": "Sculpt & contour", "text": "Define your jawline, cheekbones and brow." } },
-        "b3": { "type": "benefit", "settings": { "icon": "💧", "title": "De-puff", "text": "Drain morning puffiness in one short session." } },
-        "b4": { "type": "benefit", "settings": { "icon": "✨", "title": "Salon results at home", "text": "Skip the R600 facial — same tech, your bathroom." } }
+        "b1": { "type": "benefit", "settings": { "icon": "⬆️", "title": "Microcurrent lift", "text": "Gentle current works the facial muscles for a visibly lifted look." } },
+        "b2": { "type": "benefit", "settings": { "icon": "💪", "title": "EMS sculpting", "text": "Targets the jaw, neck and double chin for a defined V-shape." } },
+        "b3": { "type": "benefit", "settings": { "icon": "🌈", "title": "7-colour LED", "text": "Red light to support firmer, glowier-looking skin." } },
+        "b4": { "type": "benefit", "settings": { "icon": "💧", "title": "De-puff & glow", "text": "Boost circulation and drain puffiness in just 5 minutes." } }
       },
       "block_order": ["b1", "b2", "b3", "b4"]
     },
