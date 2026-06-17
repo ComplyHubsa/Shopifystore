@@ -1,13 +1,15 @@
 {
   "sections": {
-    "hero": {
-      "type": "image-with-text",
+    "banner": {
+      "type": "banner",
       "settings": {
-        "layout": "normal",
+        "image_url": "https://i.postimg.cc/bNn8bPmh/Screenshot-2026-06-17-at-16-19-54.png",
         "eyebrow": "Microcurrent · EMS · 7-colour LED",
         "heading": "Your 5-minute facelift.",
-        "text": "<p>Lúma combines microcurrent, EMS and 7-colour LED light therapy to lift, sculpt and firm — a snatched jawline, a defined neck and brighter skin. Salon tech, on your bathroom counter.</p><p><strong>★★★★★ Join 8,000+ snatched faces.</strong></p>",
-        "button_label": "Shop the Sculptor"
+        "subheading": "Lift, sculpt and firm — a snatched jawline, a defined neck and brighter skin. Salon tech, on your bathroom counter.",
+        "button_label": "Shop the Sculptor",
+        "show_rating": true,
+        "rating_text": "Loved by 8,000+"
       }
     },
     "trustbar": {
@@ -31,22 +33,12 @@
       },
       "block_order": ["b1", "b2", "b3", "b4"]
     },
-    "science": {
-      "type": "image-with-text",
-      "settings": {
-        "layout": "reverse",
-        "eyebrow": "The science",
-        "heading": "The science of a snatched face",
-        "text": "<p>Lúma packs <strong>three salon technologies</strong> into one device. <strong>Microcurrent</strong> works your facial muscles for lift. <strong>EMS</strong> goes deeper to sculpt the jaw, neck and double chin. And <strong>7-colour LED light therapy</strong> — including red light — supports firmer, glowier-looking skin.</p>",
-        "button_label": "Get yours"
-      }
-    },
     "how-to": {
       "type": "how-to",
       "settings": { "eyebrow": "5-minute routine", "heading": "Sculpt in 3 steps" },
       "blocks": {
         "s1": { "type": "step", "settings": { "title": "Prep", "text": "Smooth a layer of conductive gel over clean skin." } },
-        "s2": { "type": "step", "settings": { "title": "Glide", "text": "Move Lúma slowly upward and outward along your jaw, cheeks and brow." } },
+        "s2": { "type": "step", "settings": { "title": "Glide", "text": "Move Lúma slowly upward and outward along your jaw, cheeks and neck." } },
         "s3": { "type": "step", "settings": { "title": "Glow", "text": "5 minutes, 5x a week. Lift now, lasting results in 4–6 weeks." } }
       },
       "block_order": ["s1", "s2", "s3"]
@@ -95,5 +87,5 @@
       "block_order": ["f1", "f2", "fled", "f3", "f4", "f5", "f6"]
     }
   },
-  "order": ["hero", "trustbar", "benefits", "science", "how-to", "comparison", "testimonials", "guarantee", "faq"]
+  "order": ["banner", "trustbar", "benefits", "how-to", "comparison", "testimonials", "guarantee", "faq"]
 }
