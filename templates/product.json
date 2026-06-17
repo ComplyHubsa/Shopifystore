@@ -14,9 +14,19 @@
       },
       "block_order": ["t1", "t2", "t3"]
     },
+    "trustbar": {
+      "type": "trust-bar",
+      "blocks": {
+        "i1": { "type": "item", "settings": { "icon": "shipping", "text": "Free shipping across SA" } },
+        "i2": { "type": "item", "settings": { "icon": "returns", "text": "30-day money-back" } },
+        "i3": { "type": "item", "settings": { "icon": "secure", "text": "Secure checkout" } },
+        "i4": { "type": "item", "settings": { "icon": "star", "text": "4.9/5 from 8,000+" } }
+      },
+      "block_order": ["i1", "i2", "i3", "i4"]
+    },
     "benefits": {
       "type": "benefits",
-      "settings": { "heading": "Why you'll love it" },
+      "settings": { "eyebrow": "The tech", "heading": "Three salon technologies, one device" },
       "blocks": {
         "b1": { "type": "benefit", "settings": { "icon": "lift", "title": "Microcurrent lift", "text": "Gentle current works the facial muscles for a visibly lifted look." } },
         "b2": { "type": "benefit", "settings": { "icon": "sculpt", "title": "EMS sculpting", "text": "Targets the jaw, neck and double chin for a defined V-shape." } },
@@ -25,17 +35,60 @@
       },
       "block_order": ["b1", "b2", "b3", "b4"]
     },
+    "comparison": {
+      "type": "comparison",
+      "settings": { "eyebrow": "Why Lúma", "heading": "R899, not R3,000" },
+      "blocks": {
+        "c1": { "type": "col", "settings": { "featured": true, "tag": "Best value", "name": "Lúma", "price": "R899", "note": "3-in-1 · at home · once-off" } },
+        "c2": { "type": "col", "settings": { "featured": false, "name": "Salon facial", "price": "R600+", "note": "every single visit" } },
+        "c3": { "type": "col", "settings": { "featured": false, "name": "NuFACE device", "price": "R3,000+", "note": "single-function" } }
+      },
+      "block_order": ["c1", "c2", "c3"]
+    },
+    "how-to": {
+      "type": "how-to",
+      "settings": { "eyebrow": "5-minute routine", "heading": "How to use it" },
+      "blocks": {
+        "s1": { "type": "step", "settings": { "title": "Prep", "text": "Smooth a layer of conductive gel over clean skin." } },
+        "s2": { "type": "step", "settings": { "title": "Glide", "text": "Move Lúma slowly upward and outward along your jaw, cheeks and neck." } },
+        "s3": { "type": "step", "settings": { "title": "Glow", "text": "5 minutes, 5x a week. Lift now, lasting results in 4–6 weeks." } }
+      },
+      "block_order": ["s1", "s2", "s3"]
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": { "eyebrow": "★★★★★ 4.9 average", "heading": "Snatched, in their own words", "bg": "#F1E7E5" },
+      "blocks": {
+        "r1": { "type": "review", "settings": { "quote": "My jawline after two weeks?? I cancelled my facial appointment. The lift is real.", "name": "Naledi M.", "location": "Johannesburg" } },
+        "r2": { "type": "review", "settings": { "quote": "I use it before nights out — instant de-puff and my cheekbones actually pop. Worth every cent vs the R3k brands.", "name": "Chloé V.", "location": "Cape Town" } },
+        "r3": { "type": "review", "settings": { "quote": "Sceptical at first but the under-eye puffiness in the mornings is gone. 5 minutes while my coffee brews.", "name": "Ayesha K.", "location": "Durban" } }
+      },
+      "block_order": ["r1", "r2", "r3"]
+    },
+    "guarantee": {
+      "type": "guarantee",
+      "settings": {
+        "icon": "secure",
+        "heading": "Lift it, or your money back.",
+        "text": "Try Lúma for 30 days. If you're not seeing the lift, we'll refund you in full — even if you've used it.",
+        "button_label": "Add to cart",
+        "button_link": "#MainContent"
+      }
+    },
     "faq": {
       "type": "faq",
       "settings": { "heading": "Questions, answered" },
       "blocks": {
-        "f1": { "type": "faq", "settings": { "question": "Does it hurt?", "answer": "Not at all — most people feel a gentle tingle or nothing. Start low and build up." } },
-        "f2": { "type": "faq", "settings": { "question": "When will I see results?", "answer": "An instant lift after session one; firmer, sculpted results build over 4–6 weeks of regular use." } },
-        "f3": { "type": "faq", "settings": { "question": "Do I need a special gel?", "answer": "Yes — microcurrent needs a water-based conductive gel. Add ours at checkout." } },
-        "f4": { "type": "faq", "settings": { "question": "How long is delivery?", "answer": "Ships from our supplier — allow 2–4 weeks, tracking emailed. Free shipping across South Africa." } }
+        "f1": { "type": "faq", "settings": { "question": "Does it hurt?", "answer": "Not at all — most people feel a gentle tingle or nothing. Start on the lowest level and build up." } },
+        "f2": { "type": "faq", "settings": { "question": "When will I see results?", "answer": "An instant lift after session one; firmer, more sculpted results build over 4–6 weeks of regular use." } },
+        "fled": { "type": "faq", "settings": { "question": "What do the 7 LED colours do?", "answer": "Each colour targets something different — red light is the hero for firmer, glowier-looking skin, while blue helps with blemishes." } },
+        "f3": { "type": "faq", "settings": { "question": "Do I need a special gel?", "answer": "Yes — microcurrent needs a water-based conductive gel. Add ours at checkout, or use any aloe gel." } },
+        "f4": { "type": "faq", "settings": { "question": "Who shouldn't use it?", "answer": "Avoid if you're pregnant, have epilepsy, a pacemaker or other electrical implant. Check with your doctor if unsure." } },
+        "f5": { "type": "faq", "settings": { "question": "How long is delivery?", "answer": "Ships with tracking; free across South Africa, in about 1–2 weeks." } },
+        "f6": { "type": "faq", "settings": { "question": "What if it's not for me?", "answer": "You're covered by our 30-day money-back guarantee. Not lifted? Message us for a full refund." } }
       },
-      "block_order": ["f1", "f2", "f3", "f4"]
+      "block_order": ["f1", "f2", "fled", "f3", "f4", "f5", "f6"]
     }
   },
-  "order": ["main", "benefits", "faq"]
+  "order": ["main", "trustbar", "benefits", "comparison", "how-to", "testimonials", "guarantee", "faq"]
 }
