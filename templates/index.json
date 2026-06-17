@@ -1,11 +1,11 @@
 {
   "sections": {
-    "hero": {
-      "type": "hero",
+    "showcase": {
+      "type": "showcase",
       "settings": {
         "eyebrow": "Microcurrent · EMS · 7-colour LED",
         "heading": "Your 5-minute facelift.",
-        "subheading": "Lúma combines microcurrent, EMS and 7-colour LED light therapy to lift, sculpt and firm — a snatched jawline, a defined neck and brighter skin. Salon tech, on your bathroom counter.",
+        "subheading": "<p>Lúma combines microcurrent, EMS and 7-colour LED light therapy to lift, sculpt and firm — a snatched jawline, a defined neck and brighter skin. Salon tech, on your bathroom counter.</p>",
         "button_label": "Shop the Sculptor",
         "button_label_2": "How it works",
         "button_link_2": "#how-to",
@@ -59,16 +59,16 @@
       "type": "faq",
       "settings": { "heading": "Questions, answered" },
       "blocks": {
-        "f1": { "type": "faq", "settings": { "question": "Does it hurt?", "answer": "Not at all — most people feel a gentle tingle or nothing. Start on the lowest level and build up as you get used to it." } },
+        "f1": { "type": "faq", "settings": { "question": "Does it hurt?", "answer": "Not at all — most people feel a gentle tingle or nothing. Start on the lowest level and build up." } },
         "f2": { "type": "faq", "settings": { "question": "When will I see results?", "answer": "You'll see an instant lift after the first session. With consistent use (5 mins, 5x a week), firmer, more sculpted results build over 4–6 weeks." } },
         "fled": { "type": "faq", "settings": { "question": "What do the 7 LED colours do?", "answer": "Each colour targets something different — red light is the hero for firmer, glowier-looking skin, while blue helps with blemishes. Use the colour that fits your goal, or rotate through them." } },
         "f3": { "type": "faq", "settings": { "question": "Do I need a special gel?", "answer": "Yes — microcurrent needs a water-based conductive gel to glide and carry the current. Add ours at checkout, or use any conductive/aloe gel." } },
         "f4": { "type": "faq", "settings": { "question": "Who shouldn't use it?", "answer": "Avoid if you're pregnant, have epilepsy, a pacemaker or other electrical implant. Check with your doctor if unsure." } },
-        "f5": { "type": "faq", "settings": { "question": "How long is delivery?", "answer": "Your Lúma ships directly from our supplier — please allow 2–4 weeks, with tracking emailed to you. Shipping is free across South Africa." } },
+        "f5": { "type": "faq", "settings": { "question": "How long is delivery?", "answer": "Your Lúma ships directly from our supplier with tracking. Shipping is free across South Africa." } },
         "f6": { "type": "faq", "settings": { "question": "What if it's not for me?", "answer": "You're covered by our 30-day money-back guarantee. Not lifted? Message us for a full refund." } }
       },
       "block_order": ["f1", "f2", "fled", "f3", "f4", "f5", "f6"]
     }
   },
-  "order": ["hero", "benefits", "iwt", "how-to", "testimonials", "faq"]
+  "order": ["showcase", "benefits", "iwt", "how-to", "testimonials", "faq"]
 }

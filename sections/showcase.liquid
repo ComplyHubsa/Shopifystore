@@ -5,13 +5,10 @@
       <h1 class="hero__title">{{ section.settings.heading }}</h1>
 
       {%- if section.settings.show_rating -%}
-        <div class="hero__rating">
-          <span class="stars">★★★★★</span>
-          <span>{{ section.settings.rating_text }}</span>
-        </div>
+        <p class="hero__rating"><span class="stars">★★★★★</span> {{ section.settings.rating_text }}</p>
       {%- endif -%}
 
-      <p class="lede">{{ section.settings.subheading }}</p>
+      <div class="lede rte">{{ section.settings.subheading }}</div>
 
       <div class="hero__cta">
         {%- if section.settings.button_label != blank -%}
@@ -31,11 +28,11 @@
 
     <div class="hero__media">
       {%- if section.settings.image != blank -%}
-        <img class="hero__img" src="{{ section.settings.image | image_url: width: 1000 }}" alt="{{ section.settings.heading | escape }}" width="1000" height="1250" loading="eager">
+        {{ section.settings.image | image_url: width: 1000 | image_tag: alt: section.settings.heading, class: 'hero__img', widths: '500, 750, 1000' }}
       {%- else -%}
         <div class="hero__placeholder">
           <span class="hero__placeholder-emoji">✨</span>
-          <span class="hero__placeholder-text">Your product photo goes here<br><small>Customize → Hero → Hero image</small></span>
+          <span class="hero__placeholder-text">Your product photo here<br><small>Customize → Showcase → image</small></span>
         </div>
       {%- endif -%}
       {%- if section.settings.badge != blank -%}<span class="hero__badge">{{ section.settings.badge }}</span>{%- endif -%}
@@ -45,20 +42,20 @@
 
 {% schema %}
 {
-  "name": "Hero",
+  "name": "Showcase",
   "settings": [
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Microcurrent · EMS · 7-colour LED" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Your 5-minute facelift." },
-    { "type": "textarea", "id": "subheading", "label": "Subheading", "default": "Lúma combines microcurrent, EMS and 7-colour LED light therapy to lift, sculpt and firm — a snatched jawline, a defined neck and brighter skin. Salon tech, on your bathroom counter." },
+    { "type": "richtext", "id": "subheading", "label": "Subheading", "default": "<p>Lift, sculpt and firm with microcurrent, EMS and 7-colour LED light therapy.</p>" },
     { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop the Sculptor" },
     { "type": "url", "id": "button_link", "label": "Button link" },
     { "type": "text", "id": "button_label_2", "label": "Secondary button label", "default": "How it works" },
     { "type": "url", "id": "button_link_2", "label": "Secondary button link", "default": "#how-to" },
     { "type": "image_picker", "id": "image", "label": "Hero image" },
-    { "type": "text", "id": "badge", "label": "Image badge", "default": "Loved on TikTok" },
+    { "type": "text", "id": "badge", "label": "Image badge", "default": "As seen on TikTok" },
     { "type": "checkbox", "id": "show_rating", "label": "Show rating", "default": true },
     { "type": "text", "id": "rating_text", "label": "Rating text", "default": "Join 8,000+ snatched faces" }
   ],
-  "presets": [{ "name": "Hero" }]
+  "presets": [{ "name": "Showcase" }]
 }
 {% endschema %}
