@@ -1,17 +1,13 @@
 {
   "sections": {
-    "showcase": {
-      "type": "showcase",
+    "hero": {
+      "type": "image-with-text",
       "settings": {
+        "layout": "normal",
         "eyebrow": "Microcurrent · EMS · 7-colour LED",
         "heading": "Your 5-minute facelift.",
-        "subheading": "Lúma combines microcurrent, EMS and 7-colour LED light therapy to lift, sculpt and firm — a snatched jawline, a defined neck and brighter skin. Salon tech, on your bathroom counter.",
-        "button_label": "Shop the Sculptor",
-        "button_label_2": "How it works",
-        "button_link_2": "#how-to",
-        "badge": "As seen on TikTok",
-        "show_rating": true,
-        "rating_text": "Join 8,000+ snatched faces"
+        "text": "<p>Lúma combines microcurrent, EMS and 7-colour LED light therapy to lift, sculpt and firm — a snatched jawline, a defined neck and brighter skin. Salon tech, on your bathroom counter.</p><p><strong>★★★★★ Join 8,000+ snatched faces.</strong></p>",
+        "button_label": "Shop the Sculptor"
       }
     },
     "trustbar": {
@@ -35,13 +31,13 @@
       },
       "block_order": ["b1", "b2", "b3", "b4"]
     },
-    "iwt": {
+    "science": {
       "type": "image-with-text",
       "settings": {
-        "layout": "normal",
+        "layout": "reverse",
         "eyebrow": "The science",
         "heading": "The science of a snatched face",
-        "text": "<p>Lúma packs <strong>three salon technologies</strong> into one device. <strong>Microcurrent</strong> works your facial muscles for lift. <strong>EMS</strong> goes deeper to sculpt the jaw, neck and double chin. And <strong>7-colour LED light therapy</strong> — including red light — supports firmer, glowier-looking skin.</p><p>Glide it on with a little conductive gel, work upward and out, and watch the lift build session after session.</p>",
+        "text": "<p>Lúma packs <strong>three salon technologies</strong> into one device. <strong>Microcurrent</strong> works your facial muscles for lift. <strong>EMS</strong> goes deeper to sculpt the jaw, neck and double chin. And <strong>7-colour LED light therapy</strong> — including red light — supports firmer, glowier-looking skin.</p>",
         "button_label": "Get yours"
       }
     },
@@ -90,8 +86,8 @@
       "blocks": {
         "f1": { "type": "faq", "settings": { "question": "Does it hurt?", "answer": "Not at all — most people feel a gentle tingle or nothing. Start on the lowest level and build up." } },
         "f2": { "type": "faq", "settings": { "question": "When will I see results?", "answer": "You'll see an instant lift after the first session. With consistent use (5 mins, 5x a week), firmer, more sculpted results build over 4–6 weeks." } },
-        "fled": { "type": "faq", "settings": { "question": "What do the 7 LED colours do?", "answer": "Each colour targets something different — red light is the hero for firmer, glowier-looking skin, while blue helps with blemishes. Use the colour that fits your goal, or rotate through them." } },
-        "f3": { "type": "faq", "settings": { "question": "Do I need a special gel?", "answer": "Yes — microcurrent needs a water-based conductive gel to glide and carry the current. Add ours at checkout, or use any conductive/aloe gel." } },
+        "fled": { "type": "faq", "settings": { "question": "What do the 7 LED colours do?", "answer": "Each colour targets something different — red light is the hero for firmer, glowier-looking skin, while blue helps with blemishes." } },
+        "f3": { "type": "faq", "settings": { "question": "Do I need a special gel?", "answer": "Yes — microcurrent needs a water-based conductive gel to glide and carry the current. Add ours at checkout, or use any aloe gel." } },
         "f4": { "type": "faq", "settings": { "question": "Who shouldn't use it?", "answer": "Avoid if you're pregnant, have epilepsy, a pacemaker or other electrical implant. Check with your doctor if unsure." } },
         "f5": { "type": "faq", "settings": { "question": "How long is delivery?", "answer": "Your Lúma ships directly from our supplier with tracking. Shipping is free across South Africa." } },
         "f6": { "type": "faq", "settings": { "question": "What if it's not for me?", "answer": "You're covered by our 30-day money-back guarantee. Not lifted? Message us for a full refund." } }
@@ -99,5 +95,5 @@
       "block_order": ["f1", "f2", "fled", "f3", "f4", "f5", "f6"]
     }
   },
-  "order": ["showcase", "trustbar", "benefits", "iwt", "how-to", "comparison", "testimonials", "guarantee", "faq"]
+  "order": ["hero", "trustbar", "benefits", "science", "how-to", "comparison", "testimonials", "guarantee", "faq"]
 }
