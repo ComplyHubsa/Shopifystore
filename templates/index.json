@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "eyebrow": "Slick-back · Flyaways · Edges",
+        "heading": "Not a hair out of place.",
+        "subheading": "Sleeq Slick Stick tames flyaways, baby hairs and edges in one swipe — strong all-day hold, zero flakes, zero grease. Your slick bun's new best friend.",
+        "button_label": "Shop the Slick Stick",
+        "button_label_2": "How it works",
+        "button_link_2": "#how-to",
+        "badge": "Beeswax + Castor Oil",
+        "show_rating": true,
+        "rating_text": "Loved by 4,000+ sleek-hair fans"
+      }
+    },
+    "benefits": {
+      "type": "benefits",
+      "settings": { "heading": "Why it works" },
+      "blocks": {
+        "b1": { "type": "benefit", "settings": { "icon": "💪", "title": "Strong hold", "text": "Salon-grade grip that lasts all day, even in humidity." } },
+        "b2": { "type": "benefit", "settings": { "icon": "🪶", "title": "No flakes", "text": "Smooth wax glide — never crunchy, white or stiff." } },
+        "b3": { "type": "benefit", "settings": { "icon": "🌿", "title": "Nourishing", "text": "Beeswax + castor oil condition while they hold." } },
+        "b4": { "type": "benefit", "settings": { "icon": "⚡", "title": "One swipe", "text": "Mess-free stick — touch up anywhere in seconds." } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4"]
+    },
+    "iwt": {
+      "type": "image-with-text",
+      "settings": {
+        "layout": "normal",
+        "eyebrow": "The formula",
+        "heading": "Hold that loves your hair back",
+        "text": "<p>We skipped the cheap stiffening agents. Sleeq is built on a <strong>beeswax base infused with castor oil and vitamin E</strong> — so while it grips every flyaway, it's conditioning your strands and edges, not drying them out. Non-greasy, no white cast, no crunch.</p>",
+        "button_label": "Get yours"
+      }
+    },
+    "how-to": {
+      "type": "how-to",
+      "settings": { "eyebrow": "60-second routine", "heading": "Sleek in 3 steps" },
+      "blocks": {
+        "s1": { "type": "step", "settings": { "title": "Swipe", "text": "Glide the stick directly over flyaways, baby hairs and edges." } },
+        "s2": { "type": "step", "settings": { "title": "Smooth", "text": "Press down with the spoolie or your palm to shape and slick." } },
+        "s3": { "type": "step", "settings": { "title": "Set", "text": "Done. Strong, flake-free hold that lasts all day." } }
+      },
+      "block_order": ["s1", "s2", "s3"]
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": { "eyebrow": "★★★★★ 4.9 average", "heading": "What the slick-hair crowd says", "bg": "#EFE7DA" },
+      "blocks": {
+        "r1": { "type": "review", "settings": { "quote": "Obsessed. My slick bun finally stays put through a full Joburg workday — no flyaways by 5pm.", "name": "Thandi M.", "location": "Johannesburg" } },
+        "r2": { "type": "review", "settings": { "quote": "Way better than gel. No crunch, no white flakes, and it actually smells nice. Lasts me ages too.", "name": "Aisha P.", "location": "Cape Town" } },
+        "r3": { "type": "review", "settings": { "quote": "Got it for my edges and ended up using it on my brows and my partner's slick-back. One stick, whole house.", "name": "Lerato K.", "location": "Durban" } }
+      },
+      "block_order": ["r1", "r2", "r3"]
+    },
+    "faq": {
+      "type": "faq",
+      "settings": { "heading": "Questions, answered" },
+      "blocks": {
+        "f1": { "type": "faq", "settings": { "question": "Does it work on all hair types?", "answer": "Yes — straight, wavy, curly and coily. It grips fine baby hairs and thicker edges alike, without flaking." } },
+        "f2": { "type": "faq", "settings": { "question": "Will it leave my hair greasy or white?", "answer": "No. The beeswax-and-oil formula melts in clear and matte. A little goes a long way — start light and build up." } },
+        "f3": { "type": "faq", "settings": { "question": "How long does one stick last?", "answer": "With everyday use, most people get 2–3 months from a single stick." } },
+        "f4": { "type": "faq", "settings": { "question": "How fast is delivery in South Africa?", "answer": "We ship nationwide in 2–4 business days. Orders over R350 ship free." } },
+        "f5": { "type": "faq", "settings": { "question": "What's your returns policy?", "answer": "If you're not slicked, message us within 30 days for a refund or replacement." } }
+      },
+      "block_order": ["f1", "f2", "f3", "f4", "f5"]
+    }
+  },
+  "order": ["hero", "benefits", "iwt", "how-to", "testimonials", "faq"]
+}

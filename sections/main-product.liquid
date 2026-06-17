@@ -1,0 +1,139 @@
+<section class="section" data-product-root>
+  <div class="page-width product">
+    <div class="product__gallery">
+      <div class="product__media-main">
+        {%- if product.featured_image -%}
+          <img data-main-image src="{{ product.featured_image | image_url: width: 1000 }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" width="1000" height="1000">
+        {%- else -%}
+          {{ 'product-1' | placeholder_svg_tag: 'placeholder' }}
+        {%- endif -%}
+      </div>
+      {%- if product.images.size > 1 -%}
+        <div class="product__thumbs">
+          {%- for image in product.images -%}
+            <button type="button" data-thumb data-full="{{ image | image_url: width: 1000 }}" class="{% if forloop.first %}is-active{% endif %}" aria-label="View image {{ forloop.index }}">
+              <img src="{{ image | image_url: width: 160 }}" alt="" loading="lazy">
+            </button>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="product__info">
+      {%- if section.settings.show_vendor and product.vendor != blank -%}
+        <p class="eyebrow">{{ product.vendor }}</p>
+      {%- endif -%}
+      <h1 class="product__title">{{ product.title }}</h1>
+
+      {%- if section.settings.show_rating -%}
+        <div class="hero__rating" style="margin-top:0">
+          <span class="stars">★★★★★</span>
+          <span class="muted">{{ section.settings.rating_text }}</span>
+        </div>
+      {%- endif -%}
+
+      <div class="price">
+        <span class="price__current" data-price-current>{{ product.selected_or_first_available_variant.price | money }}</span>
+        {%- assign cap = product.selected_or_first_available_variant.compare_at_price -%}
+        <span class="price__compare" data-price-compare {% unless cap > product.selected_or_first_available_variant.price %}style="display:none"{% endunless %}>{{ cap | money }}</span>
+        {%- if cap > product.selected_or_first_available_variant.price -%}
+          {%- assign saved = cap | minus: product.selected_or_first_available_variant.price -%}
+          <span class="price__save">Save {{ saved | money }}</span>
+        {%- endif -%}
+      </div>
+
+      {% form 'product', product, data-product-form: true %}
+        {%- unless product.has_only_default_variant -%}
+          {%- for option in product.options_with_values -%}
+            <div class="product__option">
+              <p style="font-weight:700; margin:0 0 8px">{{ option.name }}</p>
+              <div class="variant-pills">
+                {%- for value in option.values -%}
+                  {%- assign input_id = 'opt-' | append: forloop.parentloop.index | append: '-' | append: forloop.index -%}
+                  <input
+                    type="radio"
+                    id="{{ input_id }}"
+                    name="option-{{ forloop.parentloop.index }}"
+                    value="{{ value | escape }}"
+                    data-option
+                    data-option-index="{{ forloop.parentloop.index0 }}"
+                    {% if option.selected_value == value %}checked{% endif %}>
+                  <label for="{{ input_id }}">{{ value }}</label>
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        {%- endunless -%}
+
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+        <p style="font-weight:700; margin:0 0 8px">{{ 'products.product.quantity' | t }}</p>
+        <div class="qty">
+          <button type="button" data-qty="down" aria-label="Decrease">−</button>
+          <input type="number" name="quantity" value="1" min="1" inputmode="numeric" aria-label="Quantity">
+          <button type="button" data-qty="up" aria-label="Increase">+</button>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn--accent btn--block btn--lg"
+          data-add-btn
+          data-add="{{ 'products.product.add_to_cart' | t }}"
+          data-soldout="{{ 'products.product.sold_out' | t }}"
+          {% unless product.selected_or_first_available_variant.available %}disabled{% endunless %}>
+          {% if product.selected_or_first_available_variant.available %}{{ 'products.product.add_to_cart' | t }}{% else %}{{ 'products.product.sold_out' | t }}{% endif %}
+        </button>
+      {% endform %}
+
+      <ul class="product__trust">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'trust' -%}
+            <li {{ block.shopify_attributes }}>{{ block.settings.icon }} <b>{{ block.settings.title }}</b> — {{ block.settings.text }}</li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+
+      {%- if product.description != blank -%}
+        <div class="product__desc rte">{{ product.description }}</div>
+      {%- endif -%}
+    </div>
+  </div>
+
+  <script type="application/json" data-variant-data>
+    {{ product.variants | json }}
+  </script>
+
+  {{ product | structured_data }}
+</section>
+
+{% schema %}
+{
+  "name": "Product",
+  "settings": [
+    { "type": "checkbox", "id": "show_vendor", "label": "Show vendor", "default": false },
+    { "type": "checkbox", "id": "show_rating", "label": "Show rating", "default": true },
+    { "type": "text", "id": "rating_text", "label": "Rating text", "default": "4.9 (4,000+ reviews)" }
+  ],
+  "blocks": [
+    {
+      "type": "trust",
+      "name": "Trust badge",
+      "settings": [
+        { "type": "text", "id": "icon", "label": "Icon (emoji)", "default": "🚚" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Free SA shipping" },
+        { "type": "text", "id": "text", "label": "Text", "default": "on orders over R350" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product",
+      "blocks": [
+        { "type": "trust", "settings": { "icon": "🚚", "title": "Free SA shipping", "text": "on orders over R350" } },
+        { "type": "trust", "settings": { "icon": "↩️", "title": "30-day guarantee", "text": "not slicked? full refund" } },
+        { "type": "trust", "settings": { "icon": "🔒", "title": "Secure checkout", "text": "Shopify Payments, Ozow & cards" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

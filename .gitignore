@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Shopify CLI
+.shopify/
+*.log
+
+# Node (for optional local tooling)
+node_modules/
+npm-debug.log*
+
+# Env
+.env
+.env.*

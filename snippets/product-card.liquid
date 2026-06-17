@@ -1,0 +1,21 @@
+{%- comment -%} Renders a product card. Param: product {%- endcomment -%}
+<a href="{{ product.url }}" class="card">
+  <div class="card__media">
+    {%- if product.featured_image -%}
+      {{ product.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: product.featured_image.alt | default: product.title, widths: '300, 450, 600' }}
+    {%- else -%}
+      {{ 'product-1' | placeholder_svg_tag: 'card__placeholder' }}
+    {%- endif -%}
+  </div>
+  <div class="card__body">
+    <div class="card__title">{{ product.title }}</div>
+    <div class="card__price">
+      {%- if product.compare_at_price > product.price -%}
+        <span>{{ product.price | money }}</span>
+        <span class="price__compare">{{ product.compare_at_price | money }}</span>
+      {%- else -%}
+        {{ product.price | money }}
+      {%- endif -%}
+    </div>
+  </div>
+</a>

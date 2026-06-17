@@ -1,0 +1,27 @@
+<section class="section">
+  <div class="page-width" style="max-width:680px">
+    <div class="section-heading text-center">
+      <h1>{{ page.title | default: 'Get in touch' }}</h1>
+      {%- if page.content != blank -%}<div class="rte" style="text-align:center">{{ page.content }}</div>{%- endif -%}
+    </div>
+
+    {% form 'contact' %}
+      {%- if form.posted_successfully? -%}
+        <p style="background:var(--color-surface); padding:18px; border-radius:var(--radius); text-align:center">Thanks — we'll get back to you within 24 hours.</p>
+      {%- endif -%}
+      {%- if form.errors -%}
+        <p class="form-error">{{ form.errors | default_errors }}</p>
+      {%- endif -%}
+      <div style="display:grid; gap:14px">
+        <input type="text" name="contact[name]" placeholder="Your name" required style="padding:14px 16px; border-radius:var(--radius); border:1.5px solid rgba(0,0,0,.18)">
+        <input type="email" name="contact[email]" placeholder="Email address" required style="padding:14px 16px; border-radius:var(--radius); border:1.5px solid rgba(0,0,0,.18)">
+        <textarea name="contact[body]" rows="5" placeholder="How can we help?" required style="padding:14px 16px; border-radius:var(--radius); border:1.5px solid rgba(0,0,0,.18)"></textarea>
+        <button type="submit" class="btn btn--accent btn--lg">Send message</button>
+      </div>
+    {% endform %}
+  </div>
+</section>
+
+{% schema %}
+{ "name": "Contact form", "settings": [] }
+{% endschema %}

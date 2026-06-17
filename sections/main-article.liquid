@@ -1,0 +1,16 @@
+<article class="section">
+  <div class="page-width" style="max-width:760px">
+    <p class="eyebrow">{{ article.published_at | date: '%B %d, %Y' }}</p>
+    <h1>{{ article.title }}</h1>
+    {%- if article.image -%}
+      <div style="border-radius:var(--radius); overflow:hidden; margin:18px 0 28px">
+        {{ article.image | image_url: width: 1200 | image_tag: alt: article.title }}
+      </div>
+    {%- endif -%}
+    <div class="rte">{{ article.content }}</div>
+  </div>
+</article>
+
+{% schema %}
+{ "name": "Article", "settings": [] }
+{% endschema %}

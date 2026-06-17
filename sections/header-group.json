@@ -1,0 +1,19 @@
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "text": "Free shipping over R350 · Ships across South Africa in 2–4 days"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "show_search": true
+      }
+    }
+  },
+  "order": ["announcement-bar", "header"]
+}

@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "show_vendor": false,
+        "show_rating": true,
+        "rating_text": "4.9 (4,000+ reviews)"
+      },
+      "blocks": {
+        "t1": { "type": "trust", "settings": { "icon": "🚚", "title": "Free SA shipping", "text": "on orders over R350" } },
+        "t2": { "type": "trust", "settings": { "icon": "↩️", "title": "30-day guarantee", "text": "not slicked? full refund" } },
+        "t3": { "type": "trust", "settings": { "icon": "🔒", "title": "Secure checkout", "text": "Shopify Payments, Ozow & cards" } }
+      },
+      "block_order": ["t1", "t2", "t3"]
+    },
+    "benefits": {
+      "type": "benefits",
+      "settings": { "heading": "Why you'll love it" },
+      "blocks": {
+        "b1": { "type": "benefit", "settings": { "icon": "💪", "title": "Strong hold", "text": "Salon-grade grip that lasts all day, even in humidity." } },
+        "b2": { "type": "benefit", "settings": { "icon": "🪶", "title": "No flakes", "text": "Smooth wax glide — never crunchy, white or stiff." } },
+        "b3": { "type": "benefit", "settings": { "icon": "🌿", "title": "Nourishing", "text": "Beeswax + castor oil condition while they hold." } },
+        "b4": { "type": "benefit", "settings": { "icon": "⚡", "title": "One swipe", "text": "Mess-free stick — touch up anywhere in seconds." } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4"]
+    },
+    "faq": {
+      "type": "faq",
+      "settings": { "heading": "Questions, answered" },
+      "blocks": {
+        "f1": { "type": "faq", "settings": { "question": "Does it work on all hair types?", "answer": "Yes — straight, wavy, curly and coily. It grips fine baby hairs and thicker edges alike, without flaking." } },
+        "f2": { "type": "faq", "settings": { "question": "Will it leave my hair greasy or white?", "answer": "No. The beeswax-and-oil formula melts in clear and matte. A little goes a long way." } },
+        "f3": { "type": "faq", "settings": { "question": "How fast is delivery in South Africa?", "answer": "We ship nationwide in 2–4 business days. Orders over R350 ship free." } }
+      },
+      "block_order": ["f1", "f2", "f3"]
+    }
+  },
+  "order": ["main", "benefits", "faq"]
+}

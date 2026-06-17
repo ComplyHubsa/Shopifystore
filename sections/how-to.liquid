@@ -1,0 +1,47 @@
+<section class="section" id="how-to">
+  <div class="page-width">
+    <div class="section-heading text-center">
+      {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="steps">
+      {%- for block in section.blocks -%}
+        <div class="step" {{ block.shopify_attributes }}>
+          <div class="step__num">{{ forloop.index }}</div>
+          <h3>{{ block.settings.title }}</h3>
+          <p class="muted">{{ block.settings.text }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "How to use",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "60-second routine" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Sleek in 3 steps" }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "Swipe" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "Glide the stick over flyaways, baby hairs or edges." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How to use",
+      "blocks": [
+        { "type": "step", "settings": { "title": "Swipe", "text": "Glide the stick directly over flyaways, baby hairs and edges." } },
+        { "type": "step", "settings": { "title": "Smooth", "text": "Press down with the spoolie or your palm to shape and slick." } },
+        { "type": "step", "settings": { "title": "Set", "text": "Done. Strong, flake-free hold that lasts all day." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

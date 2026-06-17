@@ -1,0 +1,48 @@
+<header class="site-header">
+  <div class="page-width header__bar">
+    <a href="{{ routes.root_url }}" class="header__logo">
+      {%- if settings.logo != blank -%}
+        <img src="{{ settings.logo | image_url: width: 480 }}" alt="{{ shop.name }}" width="{{ settings.logo_width }}" style="height:auto">
+      {%- else -%}
+        {{ settings.brand_name | default: shop.name }}
+      {%- endif -%}
+    </a>
+
+    <nav class="header__nav" id="SiteNav" aria-label="Primary">
+      {%- for link in section.settings.menu.links -%}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {%- endfor -%}
+    </nav>
+
+    <div class="header__actions">
+      {%- if section.settings.show_search -%}
+        <a href="{{ routes.search_url }}" aria-label="Search">Search</a>
+      {%- endif -%}
+      <a href="{{ routes.cart_url }}" class="cart-link" aria-label="Cart">
+        {{ 'sections.header.cart' | t }}
+        <span class="cart-count" data-cart-count {% if cart.item_count == 0 %}style="display:none"{% endif %}>{{ cart.item_count }}</span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_search",
+      "label": "Show search link",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

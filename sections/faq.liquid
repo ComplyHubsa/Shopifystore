@@ -1,0 +1,46 @@
+<section class="section">
+  <div class="page-width">
+    <div class="section-heading text-center">
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="faq">
+      {%- for block in section.blocks -%}
+        <details {{ block.shopify_attributes }} {% if forloop.first %}open{% endif %}>
+          <summary>{{ block.settings.question }}</summary>
+          <p>{{ block.settings.answer }}</p>
+        </details>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Questions, answered" }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "Question",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question", "default": "Does it work on all hair types?" },
+        { "type": "textarea", "id": "answer", "label": "Answer", "default": "Yes — straight, wavy, curly and coily. It's a swipe-on wax, so it grips fine baby hairs and thicker edges alike." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ",
+      "blocks": [
+        { "type": "faq", "settings": { "question": "Does it work on all hair types?", "answer": "Yes — straight, wavy, curly and coily. It grips fine baby hairs and thicker edges alike, without flaking." } },
+        { "type": "faq", "settings": { "question": "Will it leave my hair greasy or white?", "answer": "No. The beeswax-and-oil formula melts in clear and matte. A little goes a long way — start light and build up." } },
+        { "type": "faq", "settings": { "question": "How long does one stick last?", "answer": "With everyday use, most people get 2–3 months from a single stick." } },
+        { "type": "faq", "settings": { "question": "How fast is delivery in South Africa?", "answer": "We ship nationwide in 2–4 business days. Orders over R350 ship free." } },
+        { "type": "faq", "settings": { "question": "What's your returns policy?", "answer": "If you're not slicked, message us within 30 days for a refund or replacement." } }
+      ]
+    }
+  ]
+}
+{% endschema %}
