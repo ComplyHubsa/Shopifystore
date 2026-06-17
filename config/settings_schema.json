@@ -1,7 +1,7 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Sleeq",
+    "theme_name": "Lúma",
     "theme_version": "1.0.0",
     "theme_author": "WebFlow Studio",
     "theme_documentation_url": "https://shopify.dev/themes",
@@ -14,7 +14,7 @@
         "type": "text",
         "id": "brand_name",
         "label": "Brand name",
-        "default": "Sleeq",
+        "default": "Lúma",
         "info": "Used in the header when no logo is set."
       },
       {
@@ -46,13 +46,13 @@
         "type": "color",
         "id": "color_ink",
         "label": "Ink / text",
-        "default": "#11100E"
+        "default": "#211B20"
       },
       {
         "type": "color",
         "id": "color_bg",
         "label": "Page background",
-        "default": "#F6F1EA"
+        "default": "#F8F2F1"
       },
       {
         "type": "color",
@@ -64,7 +64,7 @@
         "type": "color",
         "id": "color_accent",
         "label": "Accent",
-        "default": "#B8893B"
+        "default": "#BC8A86"
       },
       {
         "type": "color",
@@ -76,7 +76,7 @@
         "type": "color",
         "id": "color_muted",
         "label": "Muted text",
-        "default": "#6B6256"
+        "default": "#80747A"
       }
     ]
   },
@@ -153,7 +153,7 @@
         "type": "number",
         "id": "free_ship_threshold",
         "label": "Free shipping threshold (in ZAR)",
-        "default": 350,
+        "default": 500,
         "info": "Order total at which shipping becomes free."
       }
     ]

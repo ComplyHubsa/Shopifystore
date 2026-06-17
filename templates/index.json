@@ -3,25 +3,25 @@
     "hero": {
       "type": "hero",
       "settings": {
-        "eyebrow": "Slick-back · Flyaways · Edges",
-        "heading": "Not a hair out of place.",
-        "subheading": "Sleeq Slick Stick tames flyaways, baby hairs and edges in one swipe — strong all-day hold, zero flakes, zero grease. Your slick bun's new best friend.",
-        "button_label": "Shop the Slick Stick",
+        "eyebrow": "Microcurrent face sculpting",
+        "heading": "Your 5-minute facelift.",
+        "subheading": "Lúma sends gentle microcurrent through your skin to lift, sculpt and de-puff — a visibly snatched jawline, lifted cheeks and brighter skin. Salon results, on your bathroom counter.",
+        "button_label": "Shop the Sculptor",
         "button_label_2": "How it works",
         "button_link_2": "#how-to",
-        "badge": "Beeswax + Castor Oil",
+        "badge": "Loved on TikTok",
         "show_rating": true,
-        "rating_text": "Loved by 4,000+ sleek-hair fans"
+        "rating_text": "Join 8,000+ snatched faces"
       }
     },
     "benefits": {
       "type": "benefits",
-      "settings": { "heading": "Why it works" },
+      "settings": { "heading": "What 5 minutes a day does" },
       "blocks": {
-        "b1": { "type": "benefit", "settings": { "icon": "💪", "title": "Strong hold", "text": "Salon-grade grip that lasts all day, even in humidity." } },
-        "b2": { "type": "benefit", "settings": { "icon": "🪶", "title": "No flakes", "text": "Smooth wax glide — never crunchy, white or stiff." } },
-        "b3": { "type": "benefit", "settings": { "icon": "🌿", "title": "Nourishing", "text": "Beeswax + castor oil condition while they hold." } },
-        "b4": { "type": "benefit", "settings": { "icon": "⚡", "title": "One swipe", "text": "Mess-free stick — touch up anywhere in seconds." } }
+        "b1": { "type": "benefit", "settings": { "icon": "⬆️", "title": "Instant lift", "text": "Microcurrent stimulates facial muscles for a visibly lifted look." } },
+        "b2": { "type": "benefit", "settings": { "icon": "💎", "title": "Sculpt & contour", "text": "Define your jawline, cheekbones and brow." } },
+        "b3": { "type": "benefit", "settings": { "icon": "💧", "title": "De-puff", "text": "Drain morning puffiness in one short session." } },
+        "b4": { "type": "benefit", "settings": { "icon": "✨", "title": "Salon results at home", "text": "Skip the R600 facial — same tech, your bathroom." } }
       },
       "block_order": ["b1", "b2", "b3", "b4"]
     },
@@ -29,29 +29,29 @@
       "type": "image-with-text",
       "settings": {
         "layout": "normal",
-        "eyebrow": "The formula",
-        "heading": "Hold that loves your hair back",
-        "text": "<p>We skipped the cheap stiffening agents. Sleeq is built on a <strong>beeswax base infused with castor oil and vitamin E</strong> — so while it grips every flyaway, it's conditioning your strands and edges, not drying them out. Non-greasy, no white cast, no crunch.</p>",
+        "eyebrow": "The tech",
+        "heading": "The science of a snatched face",
+        "text": "<p>Your face has <strong>over 60 muscles</strong> — and like any muscle, they lose tone with age. Lúma's <strong>low-level microcurrent</strong> mirrors your body's own electrical signals to gently work those muscles, so your face looks lifted, firmer and more sculpted over time.</p><p>Glide it on with a little conductive gel, work upward and out, and watch the lift build session after session.</p>",
         "button_label": "Get yours"
       }
     },
     "how-to": {
       "type": "how-to",
-      "settings": { "eyebrow": "60-second routine", "heading": "Sleek in 3 steps" },
+      "settings": { "eyebrow": "5-minute routine", "heading": "Sculpt in 3 steps" },
       "blocks": {
-        "s1": { "type": "step", "settings": { "title": "Swipe", "text": "Glide the stick directly over flyaways, baby hairs and edges." } },
-        "s2": { "type": "step", "settings": { "title": "Smooth", "text": "Press down with the spoolie or your palm to shape and slick." } },
-        "s3": { "type": "step", "settings": { "title": "Set", "text": "Done. Strong, flake-free hold that lasts all day." } }
+        "s1": { "type": "step", "settings": { "title": "Prep", "text": "Smooth a layer of conductive gel over clean skin." } },
+        "s2": { "type": "step", "settings": { "title": "Glide", "text": "Move Lúma slowly upward and outward along your jaw, cheeks and brow." } },
+        "s3": { "type": "step", "settings": { "title": "Glow", "text": "5 minutes, 5x a week. Lift now, lasting results in 4–6 weeks." } }
       },
       "block_order": ["s1", "s2", "s3"]
     },
     "testimonials": {
       "type": "testimonials",
-      "settings": { "eyebrow": "★★★★★ 4.9 average", "heading": "What the slick-hair crowd says", "bg": "#EFE7DA" },
+      "settings": { "eyebrow": "★★★★★ 4.9 average", "heading": "Snatched, in their own words", "bg": "#F1E7E5" },
       "blocks": {
-        "r1": { "type": "review", "settings": { "quote": "Obsessed. My slick bun finally stays put through a full Joburg workday — no flyaways by 5pm.", "name": "Thandi M.", "location": "Johannesburg" } },
-        "r2": { "type": "review", "settings": { "quote": "Way better than gel. No crunch, no white flakes, and it actually smells nice. Lasts me ages too.", "name": "Aisha P.", "location": "Cape Town" } },
-        "r3": { "type": "review", "settings": { "quote": "Got it for my edges and ended up using it on my brows and my partner's slick-back. One stick, whole house.", "name": "Lerato K.", "location": "Durban" } }
+        "r1": { "type": "review", "settings": { "quote": "My jawline after two weeks?? I cancelled my facial appointment. The lift is real.", "name": "Naledi M.", "location": "Johannesburg" } },
+        "r2": { "type": "review", "settings": { "quote": "I use it before nights out — instant de-puff and my cheekbones actually pop. Worth every cent vs the R3k brands.", "name": "Chloé V.", "location": "Cape Town" } },
+        "r3": { "type": "review", "settings": { "quote": "Sceptical at first but the under-eye puffiness in the mornings is gone. 5 minutes while my coffee brews.", "name": "Ayesha K.", "location": "Durban" } }
       },
       "block_order": ["r1", "r2", "r3"]
     },
@@ -59,13 +59,14 @@
       "type": "faq",
       "settings": { "heading": "Questions, answered" },
       "blocks": {
-        "f1": { "type": "faq", "settings": { "question": "Does it work on all hair types?", "answer": "Yes — straight, wavy, curly and coily. It grips fine baby hairs and thicker edges alike, without flaking." } },
-        "f2": { "type": "faq", "settings": { "question": "Will it leave my hair greasy or white?", "answer": "No. The beeswax-and-oil formula melts in clear and matte. A little goes a long way — start light and build up." } },
-        "f3": { "type": "faq", "settings": { "question": "How long does one stick last?", "answer": "With everyday use, most people get 2–3 months from a single stick." } },
-        "f4": { "type": "faq", "settings": { "question": "How fast is delivery in South Africa?", "answer": "We ship nationwide in 2–4 business days. Orders over R350 ship free." } },
-        "f5": { "type": "faq", "settings": { "question": "What's your returns policy?", "answer": "If you're not slicked, message us within 30 days for a refund or replacement." } }
+        "f1": { "type": "faq", "settings": { "question": "Does it hurt?", "answer": "Not at all — most people feel a gentle tingle or nothing. Start on the lowest level and build up as you get used to it." } },
+        "f2": { "type": "faq", "settings": { "question": "When will I see results?", "answer": "You'll see an instant lift after the first session. With consistent use (5 mins, 5x a week), firmer, more sculpted results build over 4–6 weeks." } },
+        "f3": { "type": "faq", "settings": { "question": "Do I need a special gel?", "answer": "Yes — microcurrent needs a water-based conductive gel to glide and carry the current. Add ours at checkout, or use any conductive/aloe gel." } },
+        "f4": { "type": "faq", "settings": { "question": "Who shouldn't use it?", "answer": "Avoid if you're pregnant, have epilepsy, a pacemaker or other electrical implant. Check with your doctor if unsure." } },
+        "f5": { "type": "faq", "settings": { "question": "How long is delivery?", "answer": "Your Lúma ships directly from our supplier — please allow 2–4 weeks, with tracking emailed to you. Shipping is free across South Africa." } },
+        "f6": { "type": "faq", "settings": { "question": "What if it's not for me?", "answer": "You're covered by our 30-day money-back guarantee. Not lifted? Message us for a full refund." } }
       },
-      "block_order": ["f1", "f2", "f3", "f4", "f5"]
+      "block_order": ["f1", "f2", "f3", "f4", "f5", "f6"]
     }
   },
   "order": ["hero", "benefits", "iwt", "how-to", "testimonials", "faq"]

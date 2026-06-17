@@ -1,57 +1,72 @@
-# Sleeq Slick Stick — product brief
+# Lúma Microcurrent Face Sculptor — product brief
 
 ## Positioning
-A swipe-on hair wax stick that tames flyaways, baby hairs and edges and locks in
-slick-backs / slick buns. Strong all-day hold, no flakes, no grease. Beeswax +
-castor oil + vitamin E base (conditioning, not drying).
+An at-home microcurrent device that lifts, sculpts and de-puffs the face. Gentle
+low-level current works the facial muscles for a visibly snatched jawline, lifted
+cheeks and brighter skin. "Your 5-minute facelift" — salon results at a fraction
+of the price.
 
-**Why this product (SA market):** trending hard on TikTok (slick-back / clean-girl /
-edge-control content), genuinely *not* yet on Takealot or Amazon.co.za, very cheap to
-ship (tiny + light), consumable (repeat purchase), and broad appeal across SA hair types.
+**Model:** high-ticket **dropship** (light, electronic, not fragile → cheap to ship,
+slow delivery is absorbed by the high margin). Zero inventory upfront.
+
+**Why this product (SA market):** viral on TikTok (face-sculpting / "snatched"
+content), the only microcurrent device on Amazon.co.za is premium NuFace (R3,000+),
+and SA niche brands (LumiSkin, Geske) sit at R1,200–R3,000. Lúma undercuts them all.
 
 ## Listing
-- **Title:** Sleeq Slick Stick — Flyaway & Edge Tamer
-- **Handle:** `slick-stick`
-- **Vendor:** Sleeq
-- **Type:** Hair Styling
-- **Tags:** hair, slick stick, edge control, flyaway, slick back, wax stick
+- **Title:** Lúma Microcurrent Face Sculptor
+- **Handle:** `microcurrent-face-sculptor`
+- **Vendor:** Lúma
+- **Type:** Beauty Device
+- **Tags:** microcurrent, face sculpting, facial toning, jawline, anti-aging, beauty device
 
 ## Pricing (ZAR)
 | Variant | Price | Compare-at | Notes |
 |---------|-------|-----------|-------|
-| 1 Stick | R149 | R229 | Entry |
-| 2-Pack  | R249 | R298 | Save R49 |
-| 3-Pack  | R329 | R447 | "Most popular" — best margin & AOV |
+| Device only | R899 | R1,499 | Hook price — undercuts every SA seller |
+| Device + Conductive Gel | R1,049 | R1,699 | AOV upsell (gel is required to use it) |
 
-Landed cost ≈ R25–35/stick (AliExpress/CJ) → ~80%+ margin. Free shipping over R350
-nudges buyers to the 3-pack.
+Landed cost ≈ R460–610 (device ~$25–28 + light shipping). At R899 → **~R300–440
+profit per order, zero inventory**. Gel adds ~R55 cost / R150 price = extra margin.
 
 ## Description (HTML — paste into Shopify product body)
 ```html
-<p><strong>One swipe. Zero flyaways.</strong> Sleeq Slick Stick grips baby hairs,
-flyaways and edges and holds your slick-back or bun in place all day — without the
-crunch, white flakes or grease of old-school gel.</p>
+<p><strong>Your 5-minute facelift.</strong> Lúma sends gentle microcurrent through
+your skin to work the muscles underneath — for a visibly lifted, sculpted, de-puffed
+face. The tech behind R3,000 salon devices, on your bathroom counter.</p>
 <ul>
-  <li><strong>Salon-grade hold</strong> that survives humidity and a full workday</li>
-  <li><strong>Beeswax + castor oil + vitamin E</strong> — conditions while it holds</li>
-  <li><strong>No flakes, no white cast, no grease</strong> — melts in clear and matte</li>
-  <li><strong>Mess-free stick + spoolie</strong> — touch up anywhere in seconds</li>
-  <li>Works on <strong>all hair types</strong> — straight, wavy, curly & coily</li>
+  <li><strong>Instant lift</strong> — see it after the very first session</li>
+  <li><strong>Sculpt &amp; contour</strong> your jawline, cheekbones and brow</li>
+  <li><strong>De-puff</strong> morning and under-eye puffiness fast</li>
+  <li><strong>5 minutes, 5x a week</strong> — lasting results in 4–6 weeks</li>
+  <li>Rechargeable · multiple intensity levels · all skin types</li>
 </ul>
-<p><em>How to use:</em> Swipe over flyaways/edges → smooth with the spoolie or your
-palm → set. One stick lasts most people 2–3 months.</p>
+<p><em>How to use:</em> Apply conductive gel to clean skin → glide Lúma upward and
+outward → 5 minutes. Pair with our conductive gel for the best glide and results.</p>
+<p>🚚 Free shipping across South Africa · ↩️ 30-day money-back guarantee.
+Allow 2–4 weeks for delivery (tracked).</p>
 ```
 
+## ⚠️ Compliance — keep claims cosmetic, not medical
+- ✅ OK: "lift", "sculpt", "contour", "de-puff", "firmer-looking", "visibly".
+- ❌ Avoid: "FDA-cleared" (it isn't), "removes wrinkles", "cures", "permanent",
+  any medical/treatment claim.
+- Include the contraindication note (pregnancy, epilepsy, pacemaker/implants) — it's
+  in the FAQ on the homepage and product page.
+
 ## SEO
-- **Title:** Sleeq Slick Stick — Hair Wax Stick for Flyaways & Edges | SA
-- **Description:** Tame flyaways, baby hairs & edges in one swipe. Strong, flake-free,
-  non-greasy hold. Beeswax + castor oil. Free SA shipping over R350.
+- **Title:** Lúma Microcurrent Face Sculptor — At-Home Facelift | SA
+- **Description:** Lift, sculpt & de-puff in 5 minutes. At-home microcurrent facial
+  device. R899, free SA shipping, 30-day money-back. The affordable NuFace alternative.
 
 ## Sourcing
-- AliExpress / CJ Dropshipping / Zendrop — search "hair wax stick", "slick back stick",
-  "flyaway tamer stick". Order samples first to confirm hold + scent + no white cast.
-- Once validated, bulk-import to SA for better margins and 2–4 day local delivery.
+- AliExpress / CJ Dropshipping — search "microcurrent face device", "EMS facial
+  toning device". Pick a supplier with low dispute rate + many orders.
+- **Order a sample first** — confirm it powers on, charges, and the current actually
+  fires before listing a R899 electronic.
+- Bundle/upsell a water-based **conductive gel** (cheap, required to use the device).
 
-## Images needed
-Hero (stick + sleek hair), texture/swatch macro, before/after flyaways, lifestyle
-(slick bun), pack shots (1/2/3). Drop into the Shopify product + theme hero/IWT slots.
+## Images / video needed
+Clean device shot (white/blush background), in-use on face (jaw/cheek glide),
+before/after, the glowing/LED detail, lifestyle (bathroom counter), gel pack shot.
+A short demo video converts hard on high-ticket — pull supplier clips or film the sample.

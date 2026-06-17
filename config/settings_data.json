@@ -1,27 +1,27 @@
 {
   "current": {
-    "brand_name": "Sleeq",
+    "brand_name": "Lúma",
     "logo_width": 120,
-    "color_ink": "#11100E",
-    "color_bg": "#F6F1EA",
+    "color_ink": "#211B20",
+    "color_bg": "#F8F2F1",
     "color_surface": "#FFFFFF",
-    "color_accent": "#B8893B",
+    "color_accent": "#BC8A86",
     "color_accent_contrast": "#FFFFFF",
-    "color_muted": "#6B6256",
+    "color_muted": "#80747A",
     "font_heading": "assistant_n7",
     "font_body": "assistant_n4",
     "heading_scale": 110,
     "page_width": 1280,
-    "corner_radius": 14,
+    "corner_radius": 16,
     "social_instagram": "",
     "social_tiktok": "",
     "social_facebook": "",
     "show_free_ship_bar": true,
-    "free_ship_threshold": 350
+    "free_ship_threshold": 500
   },
   "presets": {
-    "Sleeq": {
-      "brand_name": "Sleeq"
+    "Lúma": {
+      "brand_name": "Lúma"
     }
   }
 }
