@@ -1,0 +1,51 @@
+<section class="section">
+  <div class="page-width">
+    <div class="section-heading text-center">
+      {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="compare">
+      {%- for block in section.blocks -%}
+        <div class="compare__card {% if block.settings.featured %}compare__card--feature{% endif %}" {{ block.shopify_attributes }}>
+          {%- if block.settings.featured and block.settings.tag != blank -%}<span class="compare__tag">{{ block.settings.tag }}</span>{%- endif -%}
+          <p class="compare__name">{{ block.settings.name }}</p>
+          <p class="compare__price">{{ block.settings.price }}</p>
+          <p class="compare__note">{{ block.settings.note }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Comparison",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Why Lúma" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "R899, not R3,000" }
+  ],
+  "blocks": [
+    {
+      "type": "col",
+      "name": "Column",
+      "settings": [
+        { "type": "checkbox", "id": "featured", "label": "Highlight this column", "default": false },
+        { "type": "text", "id": "tag", "label": "Tag (when highlighted)", "default": "Best value" },
+        { "type": "text", "id": "name", "label": "Name", "default": "Salon facial" },
+        { "type": "text", "id": "price", "label": "Price", "default": "R600+" },
+        { "type": "text", "id": "note", "label": "Note", "default": "every visit" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison",
+      "blocks": [
+        { "type": "col", "settings": { "featured": true, "tag": "Best value", "name": "Lúma", "price": "R899", "note": "3-in-1 · at home · once-off" } },
+        { "type": "col", "settings": { "featured": false, "name": "Salon facial", "price": "R600+", "note": "every single visit" } },
+        { "type": "col", "settings": { "featured": false, "name": "NuFACE device", "price": "R3,000+", "note": "single-function" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

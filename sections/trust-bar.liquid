@@ -1,0 +1,47 @@
+<section class="trustbar">
+  <div class="page-width trustbar__row">
+    {%- for block in section.blocks -%}
+      <div class="trustbar__item" {{ block.shopify_attributes }}>
+        {% render 'icon', name: block.settings.icon, size: 22 %}
+        <span>{{ block.settings.text }}</span>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Trust bar",
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "select", "id": "icon", "label": "Icon", "default": "shipping",
+          "options": [
+            { "value": "shipping", "label": "Shipping" },
+            { "value": "returns", "label": "Returns" },
+            { "value": "secure", "label": "Secure" },
+            { "value": "star", "label": "Star" },
+            { "value": "clock", "label": "Time" },
+            { "value": "leaf", "label": "Natural" }
+          ]
+        },
+        { "type": "text", "id": "text", "label": "Text", "default": "Free SA shipping" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trust bar",
+      "blocks": [
+        { "type": "item", "settings": { "icon": "shipping", "text": "Free shipping across SA" } },
+        { "type": "item", "settings": { "icon": "returns", "text": "30-day money-back" } },
+        { "type": "item", "settings": { "icon": "secure", "text": "Secure checkout" } },
+        { "type": "item", "settings": { "icon": "star", "text": "4.9/5 from 8,000+" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

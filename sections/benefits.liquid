@@ -2,13 +2,14 @@
   <div class="page-width">
     {%- if section.settings.heading != blank -%}
       <div class="section-heading text-center">
+        {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
         <h2>{{ section.settings.heading }}</h2>
       </div>
     {%- endif -%}
     <div class="benefits">
       {%- for block in section.blocks -%}
         <div class="benefit" {{ block.shopify_attributes }}>
-          <div class="benefit__icon">{{ block.settings.icon }}</div>
+          <div class="benefit__ico">{% render 'icon', name: block.settings.icon, size: 26 %}</div>
           <h3>{{ block.settings.title }}</h3>
           <p>{{ block.settings.text }}</p>
         </div>
@@ -21,16 +22,32 @@
 {
   "name": "Benefits",
   "settings": [
-    { "type": "text", "id": "heading", "label": "Heading", "default": "Why it works" }
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Three salon technologies, one device" }
   ],
   "blocks": [
     {
       "type": "benefit",
       "name": "Benefit",
       "settings": [
-        { "type": "text", "id": "icon", "label": "Icon (emoji)", "default": "✦" },
-        { "type": "text", "id": "title", "label": "Title", "default": "All-day hold" },
-        { "type": "text", "id": "text", "label": "Text", "default": "Locks flyaways down from morning to night." }
+        {
+          "type": "select", "id": "icon", "label": "Icon", "default": "lift",
+          "options": [
+            { "value": "lift", "label": "Lift" },
+            { "value": "sculpt", "label": "Sculpt / EMS" },
+            { "value": "led", "label": "LED" },
+            { "value": "depuff", "label": "De-puff" },
+            { "value": "shipping", "label": "Shipping" },
+            { "value": "returns", "label": "Returns" },
+            { "value": "secure", "label": "Secure" },
+            { "value": "star", "label": "Star" },
+            { "value": "leaf", "label": "Natural" },
+            { "value": "clock", "label": "Time" },
+            { "value": "spark", "label": "Spark" }
+          ]
+        },
+        { "type": "text", "id": "title", "label": "Title", "default": "Microcurrent lift" },
+        { "type": "text", "id": "text", "label": "Text", "default": "Works the facial muscles for a visibly lifted look." }
       ]
     }
   ],
@@ -38,10 +55,10 @@
     {
       "name": "Benefits",
       "blocks": [
-        { "type": "benefit", "settings": { "icon": "💪", "title": "Strong hold", "text": "Salon-grade grip that lasts all day, even in humidity." } },
-        { "type": "benefit", "settings": { "icon": "🪶", "title": "No flakes", "text": "Smooth wax glide — never crunchy, white or stiff." } },
-        { "type": "benefit", "settings": { "icon": "🌿", "title": "Nourishing", "text": "Beeswax + castor oil condition while they hold." } },
-        { "type": "benefit", "settings": { "icon": "⚡", "title": "One swipe", "text": "Mess-free stick — touch up anywhere in seconds." } }
+        { "type": "benefit", "settings": { "icon": "lift", "title": "Microcurrent lift", "text": "Works the facial muscles for a visibly lifted look." } },
+        { "type": "benefit", "settings": { "icon": "sculpt", "title": "EMS sculpting", "text": "Targets the jaw, neck and double chin for a defined V-shape." } },
+        { "type": "benefit", "settings": { "icon": "led", "title": "7-colour LED", "text": "Red light to support firmer, glowier-looking skin." } },
+        { "type": "benefit", "settings": { "icon": "depuff", "title": "De-puff & glow", "text": "Boost circulation and drain puffiness in just 5 minutes." } }
       ]
     }
   ]

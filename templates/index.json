@@ -14,14 +14,24 @@
         "rating_text": "Join 8,000+ snatched faces"
       }
     },
+    "trustbar": {
+      "type": "trust-bar",
+      "blocks": {
+        "t1": { "type": "item", "settings": { "icon": "shipping", "text": "Free shipping across SA" } },
+        "t2": { "type": "item", "settings": { "icon": "returns", "text": "30-day money-back" } },
+        "t3": { "type": "item", "settings": { "icon": "secure", "text": "Secure checkout" } },
+        "t4": { "type": "item", "settings": { "icon": "star", "text": "4.9/5 from 8,000+" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4"]
+    },
     "benefits": {
       "type": "benefits",
-      "settings": { "heading": "Three salon technologies, one device" },
+      "settings": { "eyebrow": "The tech", "heading": "Three salon technologies, one device" },
       "blocks": {
-        "b1": { "type": "benefit", "settings": { "icon": "⬆️", "title": "Microcurrent lift", "text": "Gentle current works the facial muscles for a visibly lifted look." } },
-        "b2": { "type": "benefit", "settings": { "icon": "💪", "title": "EMS sculpting", "text": "Targets the jaw, neck and double chin for a defined V-shape." } },
-        "b3": { "type": "benefit", "settings": { "icon": "🌈", "title": "7-colour LED", "text": "Red light to support firmer, glowier-looking skin." } },
-        "b4": { "type": "benefit", "settings": { "icon": "💧", "title": "De-puff & glow", "text": "Boost circulation and drain puffiness in just 5 minutes." } }
+        "b1": { "type": "benefit", "settings": { "icon": "lift", "title": "Microcurrent lift", "text": "Gentle current works the facial muscles for a visibly lifted look." } },
+        "b2": { "type": "benefit", "settings": { "icon": "sculpt", "title": "EMS sculpting", "text": "Targets the jaw, neck and double chin for a defined V-shape." } },
+        "b3": { "type": "benefit", "settings": { "icon": "led", "title": "7-colour LED", "text": "Red light to support firmer, glowier-looking skin." } },
+        "b4": { "type": "benefit", "settings": { "icon": "depuff", "title": "De-puff & glow", "text": "Boost circulation and drain puffiness in just 5 minutes." } }
       },
       "block_order": ["b1", "b2", "b3", "b4"]
     },
@@ -29,7 +39,7 @@
       "type": "image-with-text",
       "settings": {
         "layout": "normal",
-        "eyebrow": "The tech",
+        "eyebrow": "The science",
         "heading": "The science of a snatched face",
         "text": "<p>Lúma packs <strong>three salon technologies</strong> into one device. <strong>Microcurrent</strong> works your facial muscles for lift. <strong>EMS</strong> goes deeper to sculpt the jaw, neck and double chin. And <strong>7-colour LED light therapy</strong> — including red light — supports firmer, glowier-looking skin.</p><p>Glide it on with a little conductive gel, work upward and out, and watch the lift build session after session.</p>",
         "button_label": "Get yours"
@@ -45,6 +55,16 @@
       },
       "block_order": ["s1", "s2", "s3"]
     },
+    "comparison": {
+      "type": "comparison",
+      "settings": { "eyebrow": "Why Lúma", "heading": "R899, not R3,000" },
+      "blocks": {
+        "c1": { "type": "col", "settings": { "featured": true, "tag": "Best value", "name": "Lúma", "price": "R899", "note": "3-in-1 · at home · once-off" } },
+        "c2": { "type": "col", "settings": { "featured": false, "name": "Salon facial", "price": "R600+", "note": "every single visit" } },
+        "c3": { "type": "col", "settings": { "featured": false, "name": "NuFACE device", "price": "R3,000+", "note": "single-function" } }
+      },
+      "block_order": ["c1", "c2", "c3"]
+    },
     "testimonials": {
       "type": "testimonials",
       "settings": { "eyebrow": "★★★★★ 4.9 average", "heading": "Snatched, in their own words", "bg": "#F1E7E5" },
@@ -54,6 +74,15 @@
         "r3": { "type": "review", "settings": { "quote": "Sceptical at first but the under-eye puffiness in the mornings is gone. 5 minutes while my coffee brews.", "name": "Ayesha K.", "location": "Durban" } }
       },
       "block_order": ["r1", "r2", "r3"]
+    },
+    "guarantee": {
+      "type": "guarantee",
+      "settings": {
+        "icon": "secure",
+        "heading": "Lift it, or your money back.",
+        "text": "Try Lúma for 30 days. If you're not seeing the lift, we'll refund you in full — even if you've used it.",
+        "button_label": "Shop the Sculptor"
+      }
     },
     "faq": {
       "type": "faq",
@@ -70,5 +99,5 @@
       "block_order": ["f1", "f2", "fled", "f3", "f4", "f5", "f6"]
     }
   },
-  "order": ["showcase", "benefits", "iwt", "how-to", "testimonials", "faq"]
+  "order": ["showcase", "trustbar", "benefits", "iwt", "how-to", "comparison", "testimonials", "guarantee", "faq"]
 }

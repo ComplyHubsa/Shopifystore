@@ -8,9 +8,9 @@
         "rating_text": "4.9 (8,000+ reviews)"
       },
       "blocks": {
-        "t1": { "type": "trust", "settings": { "icon": "🚚", "title": "Free SA shipping", "text": "on every order" } },
-        "t2": { "type": "trust", "settings": { "icon": "↩️", "title": "30-day money-back", "text": "not lifted? full refund" } },
-        "t3": { "type": "trust", "settings": { "icon": "🔒", "title": "Secure checkout", "text": "Shopify Payments, Ozow & cards" } }
+        "t1": { "type": "trust", "settings": { "icon": "shipping", "title": "Free SA shipping", "text": "on every order" } },
+        "t2": { "type": "trust", "settings": { "icon": "returns", "title": "30-day money-back", "text": "not lifted? full refund" } },
+        "t3": { "type": "trust", "settings": { "icon": "secure", "title": "Secure checkout", "text": "Shopify Payments, Ozow & cards" } }
       },
       "block_order": ["t1", "t2", "t3"]
     },
@@ -18,10 +18,10 @@
       "type": "benefits",
       "settings": { "heading": "Why you'll love it" },
       "blocks": {
-        "b1": { "type": "benefit", "settings": { "icon": "⬆️", "title": "Microcurrent lift", "text": "Gentle current works the facial muscles for a visibly lifted look." } },
-        "b2": { "type": "benefit", "settings": { "icon": "💪", "title": "EMS sculpting", "text": "Targets the jaw, neck and double chin for a defined V-shape." } },
-        "b3": { "type": "benefit", "settings": { "icon": "🌈", "title": "7-colour LED", "text": "Red light to support firmer, glowier-looking skin." } },
-        "b4": { "type": "benefit", "settings": { "icon": "💧", "title": "De-puff & glow", "text": "Boost circulation and drain puffiness in just 5 minutes." } }
+        "b1": { "type": "benefit", "settings": { "icon": "lift", "title": "Microcurrent lift", "text": "Gentle current works the facial muscles for a visibly lifted look." } },
+        "b2": { "type": "benefit", "settings": { "icon": "sculpt", "title": "EMS sculpting", "text": "Targets the jaw, neck and double chin for a defined V-shape." } },
+        "b3": { "type": "benefit", "settings": { "icon": "led", "title": "7-colour LED", "text": "Red light to support firmer, glowier-looking skin." } },
+        "b4": { "type": "benefit", "settings": { "icon": "depuff", "title": "De-puff & glow", "text": "Boost circulation and drain puffiness in just 5 minutes." } }
       },
       "block_order": ["b1", "b2", "b3", "b4"]
     },

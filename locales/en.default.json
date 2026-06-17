@@ -43,7 +43,7 @@
       "remove": "Remove",
       "taxes_note": "Taxes and shipping calculated at checkout.",
       "free_ship_remaining_html": "You're {{ amount }} away from free shipping!",
-      "free_ship_unlocked": "🎉 You've unlocked free shipping!"
+      "free_ship_unlocked": "You've unlocked free shipping!"
     }
   },
   "sections": {

@@ -20,9 +20,9 @@
       </div>
 
       <ul class="hero__perks">
-        <li>✓ Free SA shipping</li>
-        <li>✓ 30-day money-back</li>
-        <li>✓ Tracked delivery</li>
+        <li>{% render 'icon', name: 'check', size: 16 %} Free SA shipping</li>
+        <li>{% render 'icon', name: 'check', size: 16 %} 30-day money-back</li>
+        <li>{% render 'icon', name: 'check', size: 16 %} Tracked delivery</li>
       </ul>
     </div>
 
@@ -31,7 +31,7 @@
         {{ section.settings.image | image_url: width: 1000 | image_tag: alt: section.settings.heading, class: 'hero__img', widths: '500, 750, 1000' }}
       {%- else -%}
         <div class="hero__placeholder">
-          <span class="hero__placeholder-emoji">✨</span>
+          {% render 'icon', name: 'spark', size: 40 %}
           <span class="hero__placeholder-text">Your product photo here<br><small>Customize → Showcase → image</small></span>
         </div>
       {%- endif -%}

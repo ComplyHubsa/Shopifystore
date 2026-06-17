@@ -88,7 +88,7 @@
       <ul class="product__trust">
         {%- for block in section.blocks -%}
           {%- if block.type == 'trust' -%}
-            <li {{ block.shopify_attributes }}>{{ block.settings.icon }} <b>{{ block.settings.title }}</b> — {{ block.settings.text }}</li>
+            <li {{ block.shopify_attributes }}>{% render 'icon', name: block.settings.icon, size: 20 %} <span><b>{{ block.settings.title }}</b> — {{ block.settings.text }}</span></li>
           {%- endif -%}
         {%- endfor -%}
       </ul>
@@ -119,7 +119,17 @@
       "type": "trust",
       "name": "Trust badge",
       "settings": [
-        { "type": "text", "id": "icon", "label": "Icon (emoji)", "default": "🚚" },
+        {
+          "type": "select", "id": "icon", "label": "Icon", "default": "shipping",
+          "options": [
+            { "value": "shipping", "label": "Shipping" },
+            { "value": "returns", "label": "Returns" },
+            { "value": "secure", "label": "Secure" },
+            { "value": "star", "label": "Star" },
+            { "value": "clock", "label": "Time" },
+            { "value": "leaf", "label": "Natural" }
+          ]
+        },
         { "type": "text", "id": "title", "label": "Title", "default": "Free SA shipping" },
         { "type": "text", "id": "text", "label": "Text", "default": "on every order" }
       ]
@@ -129,9 +139,9 @@
     {
       "name": "Product",
       "blocks": [
-        { "type": "trust", "settings": { "icon": "🚚", "title": "Free SA shipping", "text": "on every order" } },
-        { "type": "trust", "settings": { "icon": "↩️", "title": "30-day money-back", "text": "not lifted? full refund" } },
-        { "type": "trust", "settings": { "icon": "🔒", "title": "Secure checkout", "text": "Shopify Payments, Ozow & cards" } }
+        { "type": "trust", "settings": { "icon": "shipping", "title": "Free SA shipping", "text": "on every order" } },
+        { "type": "trust", "settings": { "icon": "returns", "title": "30-day money-back", "text": "not lifted? full refund" } },
+        { "type": "trust", "settings": { "icon": "secure", "title": "Secure checkout", "text": "Shopify Payments, Ozow & cards" } }
       ]
     }
   ]
