@@ -1,0 +1,37 @@
+<div class="page-width">
+  <div class="statbar">
+    {%- for block in section.blocks -%}
+      <div class="statbar__item" {{ block.shopify_attributes }}>
+        <b>{{ block.settings.value }}</b>
+        <span>{{ block.settings.label }}</span>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Stat bar",
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        { "type": "text", "id": "value", "label": "Value", "default": "8,000+" },
+        { "type": "text", "id": "label", "label": "Label", "default": "snatched faces" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stat bar",
+      "blocks": [
+        { "type": "stat", "settings": { "value": "8,000+", "label": "snatched faces" } },
+        { "type": "stat", "settings": { "value": "4.9/5", "label": "average rating" } },
+        { "type": "stat", "settings": { "value": "30-day", "label": "money-back" } },
+        { "type": "stat", "settings": { "value": "R899", "label": "vs R3,000 salon" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,32 @@
+<section class="feature feature--{{ section.settings.layout }} feature--bg-{{ section.settings.bg }}">
+  <div class="page-width feature__grid">
+    <div class="feature__media" style="background-image: url('{{ section.settings.image_url }}');"></div>
+    <div class="feature__text">
+      {%- if section.settings.number != blank -%}<span class="feature__ghost">{{ section.settings.number }}</span>{%- endif -%}
+      {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2>{{ section.settings.heading }}</h2>
+      {%- if section.settings.text != blank -%}<p class="lede">{{ section.settings.text }}</p>{%- endif -%}
+      {%- if section.settings.button_label != blank -%}
+        <a href="{{ section.settings.button_link | default: routes.all_products_collection_url }}" class="btn btn--ink" style="margin-top:16px">{{ section.settings.button_label }}</a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Feature",
+  "settings": [
+    { "type": "text", "id": "image_url", "label": "Image URL", "info": "Direct image link." },
+    { "type": "select", "id": "layout", "label": "Image side", "default": "left", "options": [ { "value": "left", "label": "Left" }, { "value": "right", "label": "Right" } ] },
+    { "type": "select", "id": "bg", "label": "Background", "default": "none", "options": [ { "value": "none", "label": "None" }, { "value": "blush", "label": "Blush" } ] },
+    { "type": "text", "id": "number", "label": "Ghost number", "default": "01" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Feature heading" },
+    { "type": "textarea", "id": "text", "label": "Text" },
+    { "type": "text", "id": "button_label", "label": "Button label" },
+    { "type": "url", "id": "button_link", "label": "Button link" }
+  ],
+  "presets": [{ "name": "Feature" }]
+}
+{% endschema %}

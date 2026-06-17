@@ -12,36 +12,51 @@
         "rating_text": "Loved by 8,000+"
       }
     },
-    "trustbar": {
-      "type": "trust-bar",
+    "statbar": {
+      "type": "statbar",
       "blocks": {
-        "t1": { "type": "item", "settings": { "icon": "shipping", "text": "Free shipping across SA" } },
-        "t2": { "type": "item", "settings": { "icon": "returns", "text": "30-day money-back" } },
-        "t3": { "type": "item", "settings": { "icon": "secure", "text": "Secure checkout" } },
-        "t4": { "type": "item", "settings": { "icon": "star", "text": "4.9/5 from 8,000+" } }
+        "n1": { "type": "stat", "settings": { "value": "8,000+", "label": "snatched faces" } },
+        "n2": { "type": "stat", "settings": { "value": "4.9/5", "label": "average rating" } },
+        "n3": { "type": "stat", "settings": { "value": "30-day", "label": "money-back" } },
+        "n4": { "type": "stat", "settings": { "value": "R899", "label": "vs R3,000 salon" } }
       },
-      "block_order": ["t1", "t2", "t3", "t4"]
+      "block_order": ["n1", "n2", "n3", "n4"]
+    },
+    "feature1": {
+      "type": "feature",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0837/2699/1595/files/Screenshot-2026-06-17-at-16-24-50.png?v=1781718423",
+        "layout": "left",
+        "bg": "none",
+        "number": "01",
+        "eyebrow": "The lift",
+        "heading": "Works the muscles, not just the surface",
+        "text": "Gentle microcurrent stimulates the 60+ muscles in your face for a visibly lifted, sculpted look — the way a facialist would, but at home.",
+        "button_label": "Shop the Sculptor"
+      }
     },
     "benefits": {
       "type": "benefits",
       "settings": { "eyebrow": "The tech", "heading": "Three salon technologies, one device" },
       "blocks": {
-        "b1": { "type": "benefit", "settings": { "icon": "lift", "title": "Microcurrent lift", "text": "Gentle current works the facial muscles for a visibly lifted look." } },
-        "b2": { "type": "benefit", "settings": { "icon": "sculpt", "title": "EMS sculpting", "text": "Targets the jaw, neck and double chin for a defined V-shape." } },
-        "b3": { "type": "benefit", "settings": { "icon": "led", "title": "7-colour LED", "text": "Red light to support firmer, glowier-looking skin." } },
-        "b4": { "type": "benefit", "settings": { "icon": "depuff", "title": "De-puff & glow", "text": "Boost circulation and drain puffiness in just 5 minutes." } }
+        "b1": { "type": "benefit", "settings": { "icon": "lift", "title": "Microcurrent lift", "text": "Works the facial muscles for a visibly lifted look." } },
+        "b2": { "type": "benefit", "settings": { "icon": "sculpt", "title": "EMS sculpting", "text": "Defines the jaw, neck and double chin." } },
+        "b3": { "type": "benefit", "settings": { "icon": "led", "title": "7-colour LED", "text": "Red light for firmer, glowier-looking skin." } },
+        "b4": { "type": "benefit", "settings": { "icon": "depuff", "title": "De-puff & glow", "text": "Drain puffiness in just 5 minutes a day." } }
       },
       "block_order": ["b1", "b2", "b3", "b4"]
     },
-    "how-to": {
-      "type": "how-to",
-      "settings": { "eyebrow": "5-minute routine", "heading": "Sculpt in 3 steps" },
-      "blocks": {
-        "s1": { "type": "step", "settings": { "title": "Prep", "text": "Smooth a layer of conductive gel over clean skin." } },
-        "s2": { "type": "step", "settings": { "title": "Glide", "text": "Move Lúma slowly upward and outward along your jaw, cheeks and neck." } },
-        "s3": { "type": "step", "settings": { "title": "Glow", "text": "5 minutes, 5x a week. Lift now, lasting results in 4–6 weeks." } }
-      },
-      "block_order": ["s1", "s2", "s3"]
+    "feature2": {
+      "type": "feature",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0837/2699/1595/files/Screenshot-2026-06-17-at-16-23-24.png?v=1781718421",
+        "layout": "right",
+        "bg": "blush",
+        "number": "02",
+        "eyebrow": "The glow",
+        "heading": "7-colour LED light therapy",
+        "text": "Red light supports firmer, glowier-looking skin while EMS sculpts the jaw and neck. Three salon technologies, working together in one rechargeable device."
+      }
     },
     "comparison": {
       "type": "comparison",
@@ -77,15 +92,15 @@
       "settings": { "heading": "Questions, answered" },
       "blocks": {
         "f1": { "type": "faq", "settings": { "question": "Does it hurt?", "answer": "Not at all — most people feel a gentle tingle or nothing. Start on the lowest level and build up." } },
-        "f2": { "type": "faq", "settings": { "question": "When will I see results?", "answer": "You'll see an instant lift after the first session. With consistent use (5 mins, 5x a week), firmer, more sculpted results build over 4–6 weeks." } },
-        "fled": { "type": "faq", "settings": { "question": "What do the 7 LED colours do?", "answer": "Each colour targets something different — red light is the hero for firmer, glowier-looking skin, while blue helps with blemishes." } },
-        "f3": { "type": "faq", "settings": { "question": "Do I need a special gel?", "answer": "Yes — microcurrent needs a water-based conductive gel to glide and carry the current. Add ours at checkout, or use any aloe gel." } },
+        "f2": { "type": "faq", "settings": { "question": "When will I see results?", "answer": "An instant lift after the first session. With regular use (5 mins, 5x a week), firmer, more sculpted results build over 4–6 weeks." } },
+        "fled": { "type": "faq", "settings": { "question": "What do the 7 LED colours do?", "answer": "Each targets something different — red light is the hero for firmer, glowier-looking skin, while blue helps with blemishes." } },
+        "f3": { "type": "faq", "settings": { "question": "Do I need a special gel?", "answer": "Yes — microcurrent needs a water-based conductive gel. Add ours at checkout, or use any aloe gel." } },
         "f4": { "type": "faq", "settings": { "question": "Who shouldn't use it?", "answer": "Avoid if you're pregnant, have epilepsy, a pacemaker or other electrical implant. Check with your doctor if unsure." } },
-        "f5": { "type": "faq", "settings": { "question": "How long is delivery?", "answer": "Your Lúma ships directly from our supplier with tracking. Shipping is free across South Africa." } },
+        "f5": { "type": "faq", "settings": { "question": "How long is delivery?", "answer": "Ships with tracking, free across South Africa, in about 1–2 weeks." } },
         "f6": { "type": "faq", "settings": { "question": "What if it's not for me?", "answer": "You're covered by our 30-day money-back guarantee. Not lifted? Message us for a full refund." } }
       },
       "block_order": ["f1", "f2", "fled", "f3", "f4", "f5", "f6"]
     }
   },
-  "order": ["banner", "trustbar", "benefits", "how-to", "comparison", "testimonials", "guarantee", "faq"]
+  "order": ["banner", "statbar", "feature1", "benefits", "feature2", "comparison", "testimonials", "guarantee", "faq"]
 }
