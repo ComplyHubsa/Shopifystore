@@ -74,6 +74,13 @@
           <button type="button" data-qty="up" aria-label="Increase">+</button>
         </div>
 
+        {%- if section.settings.show_urgency -%}
+          <div class="urgency">
+            <p class="urgency__stock">Selling fast — only <strong>{{ section.settings.stock_left }}</strong> left at this price</p>
+            <p class="urgency__timer">{% render 'icon', name: 'clock', size: 15 %} Sale ends in <strong data-countdown>--:--:--</strong></p>
+          </div>
+        {%- endif -%}
+
         <button
           type="submit"
           class="btn btn--accent btn--block btn--lg"
@@ -102,6 +109,9 @@
   <script type="application/json" data-variant-data>
     {{ product.variants | json }}
   </script>
+  <script>
+    (function(){var el=document.querySelector('[data-countdown]');if(!el)return;function t(){var n=new Date(),e=new Date(n);e.setHours(23,59,59,999);var d=Math.max(0,e-n),h=Math.floor(d/3.6e6),m=Math.floor(d%3.6e6/6e4),s=Math.floor(d%6e4/1000);el.textContent=(h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}t();setInterval(t,1000);})();
+  </script>
 </section>
 
 {% schema %}
@@ -110,7 +120,9 @@
   "settings": [
     { "type": "checkbox", "id": "show_vendor", "label": "Show vendor", "default": false },
     { "type": "checkbox", "id": "show_rating", "label": "Show rating", "default": true },
-    { "type": "text", "id": "rating_text", "label": "Rating text", "default": "4.9 (8,000+ reviews)" }
+    { "type": "text", "id": "rating_text", "label": "Rating text", "default": "4.9 (8,000+ reviews)" },
+    { "type": "checkbox", "id": "show_urgency", "label": "Show urgency (stock + countdown)", "default": true },
+    { "type": "text", "id": "stock_left", "label": "Units left (urgency)", "default": "9" }
   ],
   "blocks": [
     {
