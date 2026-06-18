@@ -329,3 +329,13 @@ h1, h2, h3, h4 { font-weight: var(--font-heading-weight, 700); }
   .benefits .benefit:nth-child(even) { transform: none; }
   .reviews .review:nth-child(1), .reviews .review:nth-child(3) { transform: none; }
 }
+
+/* ===== Newsletter flip ===== */
+.newsflip { perspective: 1600px; }
+.newsflip__inner { position: relative; transition: transform .7s cubic-bezier(.4,.2,.2,1); transform-style: preserve-3d; }
+.newsflip.is-flipped .newsflip__inner { transform: rotateY(180deg); }
+.newsflip__face { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.newsflip__back { position: absolute; inset: 0; transform: rotateY(180deg); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+.newsflip__code { font-family: var(--font-heading); font-weight: 800; font-size: clamp(2rem, 6vw, 3rem); letter-spacing: .14em; color: #fff; background: color-mix(in srgb, var(--color-accent) 32%, transparent); border: 1.5px dashed var(--color-accent); border-radius: var(--radius); padding: 10px 26px; }
+.newsflip__actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 6px; }
+.newsflip__shop { border-color: #fff; color: #fff; }
