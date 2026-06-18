@@ -59,9 +59,9 @@
     },
     "comparison": {
       "type": "comparison",
-      "settings": { "eyebrow": "Why Lúma", "heading": "R899, not R3,000" },
+      "settings": { "eyebrow": "Why Auvé", "heading": "R899, not R3,000" },
       "blocks": {
-        "c1": { "type": "col", "settings": { "featured": true, "tag": "Best value", "name": "Lúma", "price": "R899", "note": "3-in-1 · at home · once-off" } },
+        "c1": { "type": "col", "settings": { "featured": true, "tag": "Best value", "name": "Auvé", "price": "R899", "note": "3-in-1 · at home · once-off" } },
         "c2": { "type": "col", "settings": { "featured": false, "name": "Salon facial", "price": "R600+", "note": "every single visit" } },
         "c3": { "type": "col", "settings": { "featured": false, "name": "NuFACE device", "price": "R3,000+", "note": "single-function" } }
       },
@@ -82,7 +82,7 @@
       "settings": {
         "icon": "secure",
         "heading": "Lift it, or your money back.",
-        "text": "Try Lúma for 30 days. If you're not seeing the lift, we'll refund you in full — even if you've used it.",
+        "text": "Try Auvé for 30 days. If you're not seeing the lift, we'll refund you in full — even if you've used it.",
         "button_label": "Add to cart",
         "button_link": "#MainContent"
       }

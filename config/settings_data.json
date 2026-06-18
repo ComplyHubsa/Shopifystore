@@ -1,6 +1,6 @@
 {
   "current": {
-    "brand_name": "Lúma",
+    "brand_name": "Auvé",
     "logo_width": 120,
     "color_ink": "#211B20",
     "color_bg": "#F8F2F1",
@@ -20,8 +20,8 @@
     "free_ship_threshold": 500
   },
   "presets": {
-    "Lúma": {
-      "brand_name": "Lúma"
+    "Auvé": {
+      "brand_name": "Auvé"
     }
   }
 }

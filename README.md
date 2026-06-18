@@ -1,6 +1,6 @@
-# Lúma — Shopify theme
+# Auvé — Shopify theme
 
-Custom Shopify **Online Store 2.0** theme for **Lúma**, a single-product brand selling an at-home **microcurrent face-sculpting device** (high-ticket dropship) to the South African market.
+Custom Shopify **Online Store 2.0** theme for **Auvé**, a single-product brand selling an at-home **microcurrent face-sculpting device** (high-ticket dropship) to the South African market.
 
 Built by [WebFlow Studio](https://github.com/ComplyHubsa). Connected to Shopify via the **GitHub theme integration** — every push to `main` syncs into the connected store.
 
@@ -40,5 +40,5 @@ Brand name, colours, fonts, logo, social links and the free-shipping threshold a
 all theme settings (Customize → Theme settings) — no code edits needed to rebrand.
 
 ## The product
-**Lúma Microcurrent Face Sculptor** — at-home microcurrent device, R899. See
+**Auvé Microcurrent Face Sculptor** — at-home microcurrent device, R899. See
 `docs/product.md` for launch copy, pricing, compliance notes and sourcing.

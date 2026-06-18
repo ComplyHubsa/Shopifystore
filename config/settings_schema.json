@@ -1,7 +1,7 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Lúma",
+    "theme_name": "Auvé",
     "theme_version": "1.0.0",
     "theme_author": "WebFlow Studio",
     "theme_documentation_url": "https://shopify.dev/themes",
@@ -14,7 +14,7 @@
         "type": "text",
         "id": "brand_name",
         "label": "Brand name",
-        "default": "Lúma",
+        "default": "Auvé",
         "info": "Used in the header when no logo is set."
       },
       {
